@@ -2,5 +2,9 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-fake-content'
+  name: 'ember-fake-content',
+
+  isDevelopingAddon() {
+    return true;
+  },
 };

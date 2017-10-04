@@ -1,3 +1,27 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="nav">
+  {{#fake-content as |fake|}}
+    {{fake.nav}}
+  {{/fake-content}}
+</div>
 
-{{outlet}}
+<div class="container">
+  <div class="panel">
+    {{#fake-content as |fake|}}
+      {{fake.img}}
+      {{fake.heading}}
+    {{/fake-content}}
+  </div>
+
+  <div class="panel">
+    {{#fake-content rounded=true as |fake|}}
+      {{fake.heading}}
+      {{fake.text}}
+    {{/fake-content}}
+  </div>
+
+  <div class="panel">
+    {{#fake-content as |fake|}}
+      {{fake.heading img=true}}
+    {{/fake-content}}
+  </div>
+</div>

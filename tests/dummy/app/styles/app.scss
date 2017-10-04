@@ -1,0 +1,28 @@
+@import 'ember-fake-content';
+
+body {
+  background: #fafafa;
+  margin: 0;
+}
+
+.nav {
+  width: 100%;
+  padding: 15px 30px;
+  box-sizing: border-box;
+  background: #FFF;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  width: 450px;
+  max-width: 90%;
+  margin: 60px auto;
+}
+
+.panel {
+  padding: 30px;
+  margin-bottom: 30px;
+  background: #FFF;
+  border-radius: 3px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+}
