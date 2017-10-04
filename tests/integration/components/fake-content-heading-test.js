@@ -6,19 +6,9 @@ moduleForComponent('fake-content-heading', 'Integration | Component | fake conte
 });
 
 test('it renders', function(assert) {
-  // Set any properties with this.set('myProperty', 'value');
-  // Handle any actions with this.on('myAction', function(val) { ... });
-
   this.render(hbs`{{fake-content-heading}}`);
+  assert.equal(this.$('[data-test-ember-fake-content-heading-img]').length, 0, 'it has no img');
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#fake-content-heading}}
-      template block text
-    {{/fake-content-heading}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  this.render(hbs`{{fake-content-heading img=true}}`);
+  assert.equal(this.$('[data-test-ember-fake-content-heading-img]').length, 1, 'it has an img');
 });
