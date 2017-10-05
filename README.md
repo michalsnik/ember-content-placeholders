@@ -31,9 +31,9 @@
 ### Available components and properties
 
 * root `fake-content`
-  * Bollean `animated` (default: true)
-  * Bollean `rounded` (default: false) - border radius
-  > properties from root component are automatically passed down to each yielded component, so they can be overriden whenever necessary per comoponent case
+  * Boolean `animated` (default: true)
+  * Boolean `rounded` (default: false) - border radius
+  > properties from root component are automatically passed down to each one of yielded components, so they can be overriden whenever necessary per comoponent case
 
 
 * yield `fake.heading`
@@ -51,11 +51,11 @@
 
 ### Customization
 
-Composable components make it easy to form a required module, but sometime it's not enough. If you'd like to also amend styling, there are few variables that you can help you out:
+Composable components make it easy to form a required module, but sometimes it's not enough. If you'd like to also amend styling, there are few variables that can help you out:
 
-* `$ember-fake-content-primary-color` - darken background
+* `$ember-fake-content-primary-color` - heading background
 * `$ember-fake-content-secondary-color` - light background
-* `$ember-fake-content-border-radius` - if `rounded` property is set it sets the border radius
+* `$ember-fake-content-border-radius` - border radius size when `rounded` property is `true`
 * `$ember-fake-content-line-height` - single line height
 * `$ember-fake-content-spacing` - distance between lines
 
