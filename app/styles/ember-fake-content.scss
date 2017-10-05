@@ -50,15 +50,18 @@ $ember-fake-content-spacing: 10px !default;
   }
 }
 
+@mixin ember-fake-content-spacing {
+  [class^="ember-fake-content-"] + & {
+    margin-top: 2 * $ember-fake-content-spacing;
+  }
+}
+
 
 
 // Styles
 .ember-fake-content-heading {
+  @include ember-fake-content-spacing;
   display: flex;
-
-  * + & {
-    margin-top: 2 * $ember-fake-content-spacing;
-  }
 
   &__img {
     @include ember-fake-content;
@@ -88,9 +91,7 @@ $ember-fake-content-spacing: 10px !default;
 }
 
 .ember-fake-content-text {
-  * + & {
-    margin-top: 2 * $ember-fake-content-spacing;
-  }
+  @include ember-fake-content-spacing;
 
   &__line {
     @include ember-fake-content;
@@ -117,6 +118,7 @@ $ember-fake-content-spacing: 10px !default;
 
 .ember-fake-content-img {
   @include ember-fake-content;
+  @include ember-fake-content-spacing;
   width: 100%;
   height: 120px;
 }
