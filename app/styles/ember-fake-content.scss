@@ -32,6 +32,12 @@ $ember-fake-content-spacing: 10px !default;
     border-radius: $ember-fake-content-border-radius;
   }
 
+  .ember-fake-content-is-centered &,
+  &.ember-fake-content-is-centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .ember-fake-content-is-animated &::before,
   &.ember-fake-content-is-animated::before {
     content: '';

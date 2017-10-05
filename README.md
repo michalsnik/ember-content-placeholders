@@ -33,6 +33,7 @@
 * root `fake-content`
   * Boolean `animated` (default: true)
   * Boolean `rounded` (default: false) - border radius
+  * Boolean `centered` (default: false)
   > properties from root component are automatically passed down to each one of yielded components, so they can be overriden whenever necessary per comoponent case
 
 
@@ -48,6 +49,11 @@
 
 
 * yield `fake.nav`
+
+** TO DO: **
+- `fake.list`
+- `fake.chart`
+- `fake.table`
 
 ### Customization
 
