@@ -50,7 +50,7 @@
 
 * yield `fake.nav`
 
-** TO DO: **
+**TO DO:**
 - `fake.list`
 - `fake.chart`
 - `fake.table`
