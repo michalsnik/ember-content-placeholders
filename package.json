@@ -1,17 +1,18 @@
 {
   "name": "ember-fake-content",
   "version": "0.2.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Composable components for rendering animated content placeholders like facebook",
   "keywords": [
+    "ember",
     "ember-addon",
     "loader",
     "fake",
     "placeholder",
     "progressive",
-    "ember"
+    "skeleton-ui"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Michał Sajnóg <msajnog93@gmail.com> (http://github.com/michalsnik)",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -20,7 +21,9 @@
   "scripts": {
     "build": "ember build",
     "start": "ember server",
-    "test": "ember try:each"
+    "test": "ember try:each",
+    "nodetest": "mocha node-tests --recursive",
+    "lint": "eslint ."
   },
   "dependencies": {
     "ember-cli-babel": "^6.6.0",
@@ -30,6 +33,7 @@
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^3.0.0",
     "ember-cli": "~2.16.0-beta.2",
+    "ember-cli-blueprint-test-helpers": "^0.18.0",
     "ember-cli-dependency-checker": "^2.0.0",
     "ember-cli-eslint": "^4.0.0",
     "ember-cli-htmlbars-inline-precompile": "^1.0.0",
@@ -44,8 +48,11 @@
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
     "ember-source": "~2.16.0-beta.1",
+    "eslint": "^4.8.0",
     "eslint-plugin-ember": "^4.5.0",
-    "loader.js": "^4.2.3"
+    "loader.js": "^4.2.3",
+    "mocha": "^2.5.3",
+    "testdouble": "^3.2.6"
   },
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
