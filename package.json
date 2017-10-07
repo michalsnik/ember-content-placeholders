@@ -1,5 +1,5 @@
 {
-  "name": "ember-fake-content",
+  "name": "ember-content-placeholders",
   "version": "0.3.1",
   "description": "Composable components for rendering animated content placeholders like facebook",
   "keywords": [
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/michalsnik/ember-fake-content.git"
+    "url": "git+https://github.com/michalsnik/ember-content-placeholders.git"
   },
   "scripts": {
     "build": "ember build",

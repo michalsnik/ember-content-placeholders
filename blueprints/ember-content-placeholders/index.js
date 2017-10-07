@@ -9,7 +9,7 @@ module.exports = {
 
   afterInstall() {
     const dependencies = this.project.dependencies();
-    const importStatement = '\n@import "ember-fake-content";\n';
+    const importStatement = '\n@import "ember-content-placeholders";\n';
 
     if ('ember-cli-sass' in dependencies) {
       const stylesPath = path.join('app', 'styles');

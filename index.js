@@ -2,7 +2,7 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-fake-content',
+  name: 'ember-content-placeholders',
 
   isDevelopingAddon() {
     return true;

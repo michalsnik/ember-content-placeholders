@@ -1,19 +1,19 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('fake-content', 'Integration | Component | fake content', {
+moduleForComponent('content-placeholders', 'Integration | Component | content placeholders', {
   integration: true
 });
 
 test('it renders', function(assert) {
-  this.render(hbs`{{fake-content}}`);
+  this.render(hbs`{{content-placeholders}}`);
 
   assert.equal(this.$().text().trim(), '');
 
   this.render(hbs`
-    {{#fake-content}}
+    {{#content-placeholders}}
       template block text
-    {{/fake-content}}
+    {{/content-placeholders}}
   `);
 
   assert.equal(this.$().text().trim(), 'template block text');
