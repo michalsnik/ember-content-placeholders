@@ -1,6 +1,6 @@
 {
   "name": "ember-fake-content",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Composable components for rendering animated content placeholders like facebook",
   "keywords": [
     "ember",
