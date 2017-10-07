@@ -17,7 +17,10 @@
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michalsnik/ember-fake-content.git"
+  },
   "scripts": {
     "build": "ember build",
     "start": "ember server",
