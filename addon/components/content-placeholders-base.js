@@ -6,8 +6,8 @@ export default Component.extend({
   animated: true,
 
   classNameBindings: [
-    'rounded:ember-fake-content-is-rounded',
-    'animated:ember-fake-content-is-animated',
-    'centered:ember-fake-content-is-centered'
+    'rounded:ember-content-placeholders-is-rounded',
+    'animated:ember-content-placeholders-is-animated',
+    'centered:ember-content-placeholders-is-centered'
   ],
 });

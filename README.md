@@ -1,70 +1,70 @@
-# ember-fake-content
+# ember-content-placeholders
 
-[![NPM version](https://img.shields.io/npm/v/ember-fake-content.svg?style=flat)](https://npmjs.org/package/ember-fake-content)
-[![Build Status](https://travis-ci.org/michalsnik/ember-fake-content.svg?branch=master)](https://travis-ci.org/michalsnik/ember-fake-content)
+[![NPM version](https://img.shields.io/npm/v/ember-content-placeholders.svg?style=flat)](https://npmjs.org/package/ember-content-placeholders)
+[![Build Status](https://travis-ci.org/michalsnik/ember-content-placeholders.svg?branch=master)](https://travis-ci.org/michalsnik/ember-content-placeholders)
 
 > Ember addon for rendering fake content while data is fetching to provide better UX and lower bounce rate.
 
 ## :cd: Installation
 
-* `ember install ember-fake-content`
+* `ember install ember-content-placeholders`
 
 ## :rocket: Usage
 
 ```hbs
-{{#fake-content as |fake|}}
-  {{fake.heading img=true}}
-  {{fake.text lines="3"}}
-{{/fake-content}}
+{{#content-placeholders as |placeholder|}}
+  {{placeholder.heading img=true}}
+  {{placeholder.text lines="3"}}
+{{/content-placeholders}}
 ```
 
 ![rendered example](https://i.imgur.com/LWfqxUe.png)
 
 ```hbs
-{{#fake-content rounded=true as |fake|}}
-  {{fake.img}}
-  {{fake.heading}}
-{{/fake-content}}
+{{#content-placeholders rounded=true as |placeholder|}}
+  {{placeholder.img}}
+  {{placeholder.heading}}
+{{/content-placeholders}}
 ```
 
 ![rendered example](https://i.imgur.com/NBb6ZB7.png)
 
 ### Available components and properties
 
-* root `fake-content`
+* root `content-placeholders`
   * Boolean `animated` (default: true)
   * Boolean `rounded` (default: false) - border radius
   * Boolean `centered` (default: false)
   > properties from root component are automatically passed down to each one of yielded components, so they can be overriden whenever necessary per comoponent case
 
 
-* yield `fake.heading`
+* yield `placeholder.heading`
   * Boolean `img` (default: false)
 
 
-* yield `fake.text`
+* yield `placeholder.text`
   * Number `lines` (default: 4)
 
 
-* yield `fake.img`
+* yield `placeholder.img`
 
 
-* yield `fake.nav`
+* yield `placeholder.nav`
 
 **TO DO:**
-- `fake.list`
-- `fake.chart`
-- `fake.table`
+- `placeholder.list`
+- `placeholder.chart`
+- `placeholder.table`
 
 ### Customization
 
 Composable components make it easy to form a required module, but sometimes it's not enough. If you'd like to also amend styling, there are few variables that can help you out:
 
-* `$ember-fake-content-primary-color` - heading background
-* `$ember-fake-content-secondary-color` - light background
-* `$ember-fake-content-border-radius` - border radius size when `rounded` property is `true`
-* `$ember-fake-content-line-height` - single line height
-* `$ember-fake-content-spacing` - distance between lines
+* `$ember-content-placeholders-primary-color` - heading background
+* `$ember-content-placeholders-secondary-color` - light background
+* `$ember-content-placeholders-border-radius` - border radius size when `rounded` property is `true`
+* `$ember-content-placeholders-line-height` - single line height
+* `$ember-content-placeholders-spacing` - distance between lines
 
 ## 🔓 License
 

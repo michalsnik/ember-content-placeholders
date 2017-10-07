@@ -1,27 +1,27 @@
 <div class="nav">
-  {{#fake-content as |fake|}}
-    {{fake.nav}}
-  {{/fake-content}}
+  {{#content-placeholders as |placeholder|}}
+    {{placeholder.nav}}
+  {{/content-placeholders}}
 </div>
 
 <div class="container">
   <div class="panel">
-    {{#fake-content as |fake|}}
-      {{fake.img}}
-      {{fake.heading}}
-    {{/fake-content}}
+    {{#content-placeholders as |placeholder|}}
+      {{placeholder.img}}
+      {{placeholder.heading}}
+    {{/content-placeholders}}
   </div>
 
   <div class="panel">
-    {{#fake-content rounded=true as |fake|}}
-      {{fake.heading}}
-      {{fake.text}}
-    {{/fake-content}}
+    {{#content-placeholders rounded=true as |placeholder|}}
+      {{placeholder.heading}}
+      {{placeholder.text}}
+    {{/content-placeholders}}
   </div>
 
   <div class="panel">
-    {{#fake-content as |fake|}}
-      {{fake.heading img=true}}
-    {{/fake-content}}
+    {{#content-placeholders as |placeholder|}}
+      {{placeholder.heading img=true}}
+    {{/content-placeholders}}
   </div>
 </div>

@@ -1,0 +1,160 @@
+// Variables
+$ember-content-placeholders-primary-color: #ccc !default;
+$ember-content-placeholders-secondary-color: #eee !default;
+$ember-content-placeholders-border-radius: 6px !default;
+$ember-content-placeholders-line-height: 15px !default;
+$ember-content-placeholders-spacing: 10px !default;
+
+
+
+// Animations
+@keyframes emberContentPlaceholdersAnimation {
+  0% {
+    transform: translate3d(-30%, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+
+
+// Mixins
+@mixin ember-content-placeholders {
+  position: relative;
+  overflow: hidden;
+  height: $ember-content-placeholders-line-height;
+  background: $ember-content-placeholders-secondary-color;
+
+  .ember-content-placeholders-is-rounded &,
+  &.ember-content-placeholders-is-rounded {
+    border-radius: $ember-content-placeholders-border-radius;
+  }
+
+  .ember-content-placeholders-is-centered &,
+  &.ember-content-placeholders-is-centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ember-content-placeholders-is-animated &::before,
+  &.ember-content-placeholders-is-animated::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 1000px;
+    height: 100%;
+    background: linear-gradient(to right, transparent 0%, darken($ember-content-placeholders-secondary-color, 5%) 15%, transparent 30%);
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: emberContentPlaceholdersAnimation;
+    animation-timing-function: linear;
+  }
+}
+
+@mixin ember-content-placeholders-spacing {
+  [class^="ember-content-placeholders-"] + & {
+    margin-top: 2 * $ember-content-placeholders-spacing;
+  }
+}
+
+
+
+// Styles
+.ember-content-placeholders-heading {
+  @include ember-content-placeholders-spacing;
+  display: flex;
+
+  &__img {
+    @include ember-content-placeholders;
+    width: 2 * $ember-content-placeholders-line-height + 3 * $ember-content-placeholders-spacing;
+    height: 2 * $ember-content-placeholders-line-height + 3 * $ember-content-placeholders-spacing;
+    margin-right: 1.5 * $ember-content-placeholders-spacing;
+  }
+
+  &__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    @include ember-content-placeholders;
+    width: 85%;
+    margin-bottom: $ember-content-placeholders-spacing;
+    background: $ember-content-placeholders-primary-color;
+  }
+
+  &__subtitle {
+    @include ember-content-placeholders;
+    width: 90%;
+  }
+}
+
+.ember-content-placeholders-text {
+  @include ember-content-placeholders-spacing;
+
+  &__line {
+    @include ember-content-placeholders;
+    width: 100%;
+    margin-bottom: $ember-content-placeholders-spacing;
+
+    &:nth-child(4n + 1) {
+      width: 80%;
+    }
+
+    &:nth-child(4n + 2) {
+      width: 100%;
+    }
+
+    &:nth-child(4n + 3) {
+      width: 70%;
+    }
+
+    &:nth-child(4n + 4) {
+      width: 85%;
+    }
+  }
+}
+
+.ember-content-placeholders-img {
+  @include ember-content-placeholders;
+  @include ember-content-placeholders-spacing;
+  width: 100%;
+  height: 120px;
+}
+
+.ember-content-placeholders-nav {
+  display: flex;
+  padding: 5px 0;
+  justify-content: space-between;
+
+  &__logo {
+    @include ember-content-placeholders;
+    width: 60px;
+    background: $ember-content-placeholders-primary-color;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__item {
+    @include ember-content-placeholders;
+    width: 45px;
+    margin-left: $ember-content-placeholders-spacing;
+
+    &:nth-child(1) {
+      width: 160px;
+    }
+
+    &:nth-child(3) {
+      width: 120px;
+    }
+  }
+}

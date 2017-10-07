@@ -13,7 +13,7 @@ const modifyPackages = blueprintHelpers.modifyPackages;
 const file = chai.file;
 const expect = chai.expect;
 
-const args = ['ember-fake-content'];
+const args = ['ember-content-placeholders'];
 
 function createStyleFixture(name) {
   const stylesPath = path.join('app', 'styles');
@@ -23,7 +23,7 @@ function createStyleFixture(name) {
   fs.writeFileSync(path.join(stylesPath, name), 'body { color: red; }');
 }
 
-describe('Acceptance: ember generate ember-fake-content', function() {
+describe('Acceptance: ember generate ember-content-placeholders', function() {
   setupTestHooks(this);
 
   it('skips blueprint when no preprocessor present', function() {
@@ -41,7 +41,7 @@ describe('Acceptance: ember generate ember-fake-content', function() {
       .then(() => emberGenerate(args))
       .then(() => {
         expect(file('app/styles/app.scss'))
-          .to.contain('@import "ember-fake-content";');
+          .to.contain('@import "ember-content-placeholders";');
       });
   });
 
@@ -52,7 +52,7 @@ describe('Acceptance: ember generate ember-fake-content', function() {
       ]))
       .then(() => createStyleFixture('app.scss'))
       .then(() => emberGenerate(args, (file) => {
-        expect(file('app/styles/app.scss')).to.contain('@import "ember-fake-content";');
+        expect(file('app/styles/app.scss')).to.contain('@import "ember-content-placeholders";');
       }));
   });
 });
