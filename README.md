@@ -1,6 +1,7 @@
 # ember-fake-content
 
 [![NPM version](https://img.shields.io/npm/v/ember-fake-content.svg?style=flat)](https://npmjs.org/package/ember-fake-content)
+[![Build Status](https://travis-ci.org/michalsnik/ember-fake-content.svg?branch=master)](https://travis-ci.org/michalsnik/ember-fake-content)
 
 > Ember addon for rendering fake content while data is fetching to provide better UX and lower bounce rate.
 
