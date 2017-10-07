@@ -26,6 +26,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "bower": "^1.8.2",
     "ember-cli-babel": "^6.6.0",
     "ember-cli-htmlbars": "^2.0.1"
   },
@@ -47,7 +48,7 @@
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
-    "ember-source": "~2.16.0-beta.1",
+    "ember-try": "^0.2.17",
     "eslint": "^4.8.0",
     "eslint-plugin-ember": "^4.5.0",
     "loader.js": "^4.2.3",
