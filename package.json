@@ -26,7 +26,9 @@
     "start": "ember server",
     "test": "ember try:each",
     "nodetest": "mocha node-tests --recursive",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "preversion": "npm run compile-css && git add vendor",
+    "compile-css": "node ./compile-css.js"
   },
   "dependencies": {
     "ember-cli-babel": "^6.6.0",
@@ -56,6 +58,7 @@
     "eslint-plugin-ember": "^4.5.0",
     "loader.js": "^4.2.3",
     "mocha": "^2.5.3",
+    "node-sass": "^4.5.3",
     "testdouble": "^3.2.6"
   },
   "engines": {
