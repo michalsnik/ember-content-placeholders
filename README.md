@@ -14,7 +14,7 @@
 ```hbs
 {{#content-placeholders as |placeholder|}}
   {{placeholder.heading img=true}}
-  {{placeholder.text lines="3"}}
+  {{placeholder.text lines=3}}
 {{/content-placeholders}}
 ```
 
