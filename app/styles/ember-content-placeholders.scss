@@ -129,6 +129,13 @@ $ember-content-placeholders-spacing: 10px !default;
   height: 120px;
 }
 
+.ember-content-placeholders-icon {
+  @include ember-content-placeholders;
+  width: 20px;
+  height: 20px;
+  background: $ember-content-placeholders-primary-color;
+}
+
 .ember-content-placeholders-nav {
   display: flex;
   padding: 5px 0;
