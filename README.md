@@ -47,6 +47,7 @@ ember install ember-content-placeholders
 
 * yield `placeholder.heading`
   * Boolean `img` (default: false)
+  * Boolean `subtitle` (default: true)
 
 
 * yield `placeholder.text`
