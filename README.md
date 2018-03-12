@@ -101,7 +101,7 @@ Contributing
 
 For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
 
-License
+🔓License
 ------------------------------------------------------------------------------
 
 This project is licensed under the [MIT License](LICENSE.md).
