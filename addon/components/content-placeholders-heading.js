@@ -1,8 +1,12 @@
-import ContentPlaceholersBase from './content-placeholders-base';
+import ContentPlaceholdersBase from './content-placeholders-base';
 import layout from '../templates/components/content-placeholders-heading';
 
-export default ContentPlaceholersBase.extend({
+export default ContentPlaceholdersBase.extend({
   className: 'ember-content-placeholders-heading',
   classNameBindings: ['className'],
-  layout
+  layout,
+
+  // Option Defaults
+  img: false,
+  subtitle: true
 });
