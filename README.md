@@ -74,12 +74,13 @@ Composable components make it easy to form a required module, but sometimes it's
 * `$ember-content-placeholders-spacing` - distance between lines
 
 
-Contributing
-------------------------------------------------------------------------------
+:beers: Contributing
+--------------
 
 ### Installation
 
-* `git clone https://github.com/michalsnik/ember-content-placeholders`
+* Fork this repo
+* `git clone https://github.com/{YOUR_USERNAME}/ember-content-placeholders`
 * `cd ember-content-placeholders`
 * `yarn install`
 
@@ -101,7 +102,7 @@ Contributing
 
 For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
 
-🔓License
+:lock: License
 ------------------------------------------------------------------------------
 
 This project is licensed under the [MIT License](LICENSE.md).
