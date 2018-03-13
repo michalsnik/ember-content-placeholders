@@ -1,8 +1,8 @@
 import { computed, get } from '@ember/object';
-import ContentPlaceholersBase from './content-placeholders-base';
+import ContentPlaceholdersBase from './content-placeholders-base';
 import layout from '../templates/components/content-placeholders-text';
 
-export default ContentPlaceholersBase.extend({
+export default ContentPlaceholdersBase.extend({
   className: 'ember-content-placeholders-text',
   classNameBindings: ['className'],
 

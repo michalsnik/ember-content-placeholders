@@ -8,7 +8,15 @@ moduleForComponent('content-placeholders-heading', 'Integration | Component | co
 test('it renders', function(assert) {
   this.render(hbs`{{content-placeholders-heading}}`);
   assert.equal(this.$('[data-test-ember-content-placeholders-heading-img]').length, 0, 'it has no img');
+  assert.equal(this.$('[data-test-ember-content-placeholders-heading-subtitle]').length, 1, 'it has a subtitle');
+});
 
+test('it renders an img if provided', function(assert) {
   this.render(hbs`{{content-placeholders-heading img=true}}`);
   assert.equal(this.$('[data-test-ember-content-placeholders-heading-img]').length, 1, 'it has an img');
+});
+
+test('it does not render a subtitle if subtitle is false', function(assert) {
+  this.render(hbs`{{content-placeholders-heading subtitle=false}}`);
+  assert.equal(this.$('[data-test-ember-content-placeholders-heading-subtitle]').length, 0, 'it has no subtitle');
 });
