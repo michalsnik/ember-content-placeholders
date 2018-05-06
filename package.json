@@ -1,6 +1,6 @@
 {
   "name": "ember-content-placeholders",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "Composable components for rendering animated content placeholders like facebook",
   "keywords": [
     "ember",
