@@ -1,15 +1,22 @@
-# ember-content-placeholders
+ember-content-placeholders
+==============================================================================
 
 [![NPM version](https://img.shields.io/npm/v/ember-content-placeholders.svg?style=flat)](https://npmjs.org/package/ember-content-placeholders)
 [![Build Status](https://travis-ci.org/michalsnik/ember-content-placeholders.svg?branch=master)](https://travis-ci.org/michalsnik/ember-content-placeholders)
 
 > Ember addon for rendering fake content while data is fetching to provide better UX and lower bounce rate.
 
-## :cd: Installation
 
-* `ember install ember-content-placeholders`
+:cd: Installation
+------------------------------------------------------------------------------
 
-## :rocket: Usage
+```
+ember install ember-content-placeholders
+```
+
+
+:rocket: Usage
+------------------------------------------------------------------------------
 
 ```hbs
 {{#content-placeholders as |placeholder|}}
@@ -66,6 +73,36 @@ Composable components make it easy to form a required module, but sometimes it's
 * `$ember-content-placeholders-line-height` - single line height
 * `$ember-content-placeholders-spacing` - distance between lines
 
-## 🔓 License
 
-See the [LICENSE](LICENSE.md) file for license rights and limitations (MIT).
+:beers: Contributing
+--------------
+
+### Installation
+
+* Fork this repo
+* `git clone https://github.com/{YOUR_USERNAME}/ember-content-placeholders`
+* `cd ember-content-placeholders`
+* `yarn install`
+
+### Linting
+
+* `yarn lint:js`
+* `yarn lint:js --fix`
+
+### Running tests
+
+* `ember test` – Runs the test suite on the current Ember version
+* `ember test --server` – Runs the test suite in "watch mode"
+* `yarn test` – Runs `ember try:each` to test your addon against multiple Ember versions
+
+### Running the dummy application
+
+* `ember serve`
+* Visit the dummy application at [http://localhost:4200](http://localhost:4200).
+
+For more information on using ember-cli, visit [https://ember-cli.com/](https://ember-cli.com/).
+
+:lock: License
+------------------------------------------------------------------------------
+
+This project is licensed under the [MIT License](LICENSE.md).
