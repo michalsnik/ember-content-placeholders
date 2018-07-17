@@ -158,3 +158,37 @@ $ember-content-placeholders-spacing: 10px !default;
     }
   }
 }
+
+.ember-content-placeholders-list {
+  @include ember-content-placeholders-spacing;
+
+  &__item {
+      position: relative;
+
+      div {
+        @include ember-content-placeholders;
+        position: absolute;
+        height: initial;
+        top: 0.25em;
+        bottom: 0.25em;
+        left: 0;
+        right: 0;
+      }
+
+    &:nth-child(4n + 1) {
+      width: 80%;
+    }
+
+    &:nth-child(4n + 2) {
+      width: 100%;
+    }
+
+    &:nth-child(4n + 3) {
+      width: 70%;
+    }
+
+    &:nth-child(4n + 4) {
+      width: 85%;
+    }
+  }
+}

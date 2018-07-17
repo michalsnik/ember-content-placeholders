@@ -58,8 +58,11 @@ ember install ember-content-placeholders
 
 * yield `placeholder.nav`
 
+
+* yield `placeholder.list`
+  * Boolean `ordered` (default: false)
+
 **TO DO:**
-- `placeholder.list`
 - `placeholder.chart`
 - `placeholder.table`
 

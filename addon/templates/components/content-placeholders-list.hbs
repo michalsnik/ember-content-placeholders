@@ -1,0 +1,13 @@
+{{#if ordered}}
+  <ol>
+    {{#each itemsArray}}
+      <li class="{{className}}__item" data-test-ember-content-placeholders-list-item>&#8203;<div></div></li>
+    {{/each}}
+  </ol>
+{{else}}
+  <ul>
+    {{#each itemsArray}}
+      <li class="{{className}}__item" data-test-ember-content-placeholders-list-item>&#8203;<div></div></li>
+    {{/each}}
+  </ul>
+{{/if}}
