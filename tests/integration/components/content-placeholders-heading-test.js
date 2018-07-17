@@ -13,8 +13,8 @@ test('it renders', function(assert) {
   assert.equal(this.$('[data-test-ember-content-placeholders-heading-img]').length, 1, 'it has an img');
 
   this.render(hbs`{{content-placeholders-heading subtitle=false}}`);
-  assert.equal(this.$('.ember-content-placeholders-heading__subtitle').length, 0, 'it has no subtitle');
+  assert.equal(this.$('[data-test-ember-content-placeholders-heading-subtitle]').length, 0, 'it has no subtitle');
 
   this.render(hbs`{{content-placeholders-heading}}`);
-  assert.equal(this.$('.ember-content-placeholders-heading__subtitle').length, 1, 'it has a subtitle');
+  assert.equal(this.$('[data-test-ember-content-placeholders-heading-subtitle]').length, 1, 'it has a subtitle');
 });
