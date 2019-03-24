@@ -122,6 +122,35 @@ $ember-content-placeholders-spacing: 10px !default;
   }
 }
 
+.ember-content-placeholders-chart {
+  @include ember-content-placeholders-spacing;
+  display: flex;
+  height: 120px;
+  align-items: flex-end;
+
+  &__column {
+    @include ember-content-placeholders;
+    width: 2 * $ember-content-placeholders-spacing;
+    margin-right: 1.2 * $ember-content-placeholders-spacing;
+
+    &:nth-child(4n + 1) {
+      height: 80%;
+    }
+
+    &:nth-child(4n + 2) {
+      height: 100%;
+    }
+
+    &:nth-child(4n + 3) {
+      height: 70%;
+    }
+
+    &:nth-child(4n + 4) {
+      height: 85%;
+    }
+  }
+}
+
 .ember-content-placeholders-img {
   @include ember-content-placeholders;
   @include ember-content-placeholders-spacing;
