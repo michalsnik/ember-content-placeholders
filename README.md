@@ -36,6 +36,15 @@ ember install ember-content-placeholders
 
 ![rendered example](https://i.imgur.com/NBb6ZB7.png)
 
+
+```hbs
+{{#content-placeholders as |placeholder|}}
+  {{placeholder.chart}}
+{{/content-placeholders}}
+```
+
+![rendered example](https://i.imgur.com/n6Lv6Cn.png)
+
 ### Available components and properties
 
 * root `content-placeholders`
@@ -58,9 +67,12 @@ ember install ember-content-placeholders
 
 * yield `placeholder.nav`
 
+* yield `placeholder.chart`
+  * Number `columns` (default: 15)
+
+
 **TO DO:**
 - `placeholder.list`
-- `placeholder.chart`
 - `placeholder.table`
 
 ### Customization
