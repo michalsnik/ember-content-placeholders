@@ -1,3 +1,8 @@
-{{#each columnsArray}}
-  <div class="{{className}}__column" data-test-ember-content-placeholders-chart-column></div>
-{{/each}}
+<div class="{{className}}__yaxis"></div>
+<div class="{{className}}__data">
+  {{#each columnsArray}}
+    <div class="{{className}}__data__column" data-test-ember-content-placeholders-chart-column></div>
+  {{/each}}
+</div>
+<div class="{{className}}__xaxis"></div>
+
