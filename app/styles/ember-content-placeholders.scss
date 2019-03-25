@@ -123,30 +123,53 @@ $ember-content-placeholders-spacing: 10px !default;
 }
 
 .ember-content-placeholders-chart {
-  @include ember-content-placeholders-spacing;
-  display: flex;
   height: 120px;
-  align-items: flex-end;
 
-  &__column {
+  &__yaxis, &__xaxis {
     @include ember-content-placeholders;
-    width: 2 * $ember-content-placeholders-spacing;
-    margin-right: 1.2 * $ember-content-placeholders-spacing;
+    height: 100%;
+    margin-right: 15px;
+    width: $ember-content-placeholders-spacing;
+    background: $ember-content-placeholders-primary-color;
+    float: left;
+  }
 
-    &:nth-child(4n + 1) {
-      height: 80%;
-    }
+  &__xaxis {
+    height: 10%;
+    width: 100%;
+    border-radius: 0 $ember-content-placeholders-border-radius $ember-content-placeholders-border-radius 0 !important;
+  }
 
-    &:nth-child(4n + 2) {
-      height: 100%;
-    }
+  &__yaxis {
+    border-radius: $ember-content-placeholders-border-radius $ember-content-placeholders-border-radius 0 0 !important;
+  }
 
-    &:nth-child(4n + 3) {
-      height: 70%;
-    }
+  &__data {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
 
-    &:nth-child(4n + 4) {
-      height: 85%;
+    &__column {
+      @include ember-content-placeholders;
+      width: 2 * $ember-content-placeholders-spacing;
+      margin-right: 1.2 * $ember-content-placeholders-spacing;
+      margin-bottom: 5px;
+
+      &:nth-child(4n + 1) {
+        height: 70%;
+      }
+
+      &:nth-child(4n + 2) {
+        height: 90%;
+      }
+
+      &:nth-child(4n + 3) {
+        height: 60%;
+      }
+
+      &:nth-child(4n + 4) {
+        height: 75%;
+      }
     }
   }
 }

@@ -43,7 +43,7 @@ ember install ember-content-placeholders
 {{/content-placeholders}}
 ```
 
-![rendered example](https://imgur.com/zERO5gQ.png)
+![rendered example](https://i.imgur.com/n6Lv6Cn.png)
 
 ### Available components and properties
 
